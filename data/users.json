@@ -32,7 +32,9 @@
       "skills": [
         "JavaScript",
         "Python",
-        "Project Management"
+        "Project Management",
+        {},
+        {}
       ]
     }
   ]
