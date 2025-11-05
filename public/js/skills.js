@@ -110,10 +110,7 @@ function renderSkillListPage() {
             if (data.status === "success") {
                 data.skills.forEach(skill => {
                     //useless intentional addition to create terrible performance
-                    let list = [];
-                    for(let i = 0; i < 10000000; i++) {
-                        list[i] = Math.sqrt(i);
-                    }
+                    
                     // end of useless addition
                     const listItem = document.createElement("li");
                     listItem.textContent = skill;
@@ -139,3 +136,8 @@ function updateNavbar() {
         navbar.appendChild(adminLink);
     }
 }
+
+let list = [];
+                    for(let i = 0; i < 10000000; i++) {
+                        list[i] = Math.sqrt(i);
+                    }
